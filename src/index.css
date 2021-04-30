@@ -20,9 +20,6 @@ code {
     monospace;
 }
 
-.App {
-  /* width: 100vw; */
-}
 .account-header {
   text-align: center;
   margin: 3rem auto 0;
@@ -31,15 +28,21 @@ code {
   color: #eee;
   padding: 0.5rem;
 }
-.tbl {
+.header {
   margin: auto;
   text-align: center;
-  width: 80vw;
-  background: rgb(102, 100, 100);
+  background: rgb(41, 41, 136);
   color: #eee;
+  padding: 0.5rem;
+  width: 50vw;
 }
-.tbl-head {
-  padding: 3rem;
+.tbl {
+  margin: 0 auto 0.3rem;
+  width: 80vw;
+}
+.tb2 {
+  margin: auto;
+  width: 50vw;
 }
 input {
   outline: 0;
@@ -57,18 +60,22 @@ input:focus {
 }
 
 .dep_btn {
-  /* margin-bottom: 1rem; */
   position: absolute;
   bottom: 0.5rem;
   right: 1.5rem;
+}
+.tra_btn {
+  margin-top: 1rem;
+  position: absolute;
+  right: 25%;
 }
 .lnk {
   color: #fff;
 }
 .stylez {
   width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
   color: #eee;
   position: absolute;
   top: 0;
@@ -78,6 +85,11 @@ input:focus {
 .cont {
   width: 30vw;
   background: rgba(0, 0, 0, 0.5);
+  margin: 50vh auto;
+  position: relative;
+}
+
+.conts {
   margin: 50vh auto;
   position: relative;
 }
@@ -95,24 +107,46 @@ input:focus {
   width: 80%;
   margin: auto;
 }
-.tbl-row {
-  margin: 5rem;
-}
+
 @media screen and (max-width: 480px) {
   .body {
-    /* width: 100vw; */
+    width: 100vw;
     height: 100%;
-    /* overflow: hidden; */
+    padding: 0;
+    margin: 0;
+  }
+  .account-header,
+  .header {
+    width: 100vw;
   }
   .account-header {
-    width: 100vw;
+    margin-top: 5rem;
+  }
+  .container {
+    width: 100%;
+    padding-left: 0;
+    /* overflow-x: hidden; */
   }
   .tbl {
-    /* margin: auto; */
-    /* text-align: center; */
-    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
   .cont {
     width: 70vw;
+  }
+  .conts {
+    margin: 20vh auto;
+  }
+
+  .tb2 {
+    width: 30%;
+  }
+  .tra_btn {
+    margin-top: 1rem;
+    position: absolute;
+    right: 15%;
+  }
+  .stylez {
+    background: rgba(0, 0, 0, 0.9);
   }
 }

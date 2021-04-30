@@ -3,16 +3,16 @@ export const data = [
     {
         "id" : "40013",
         "type" : CURRENT,
-        "balance" : "25,300"
+        "balance" : "25300"
     },
     {
       "id" : "40053",
       "type" : CURRENT,
-      "balance" : "36,000"
+      "balance" : "36000"
     },
     {        
       "id" : "30078",
       "type" : SAVINGS,
-      "balance" : "40,500"
+      "balance" : "40500"
     },
 ];
